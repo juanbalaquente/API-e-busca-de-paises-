@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hepta Slab',Helvetica, Arial;}
+body{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.tabela {
+    display: table;
+}
+
+td {
+    display: table-cell;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#pesquisar {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#pesqresult {
+    list-style-type: none;
+    padding: 0;
+}
+
+#continente {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#continente button {
+    margin: 5px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.esquerda, .direita {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+ul li img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+ul li button {
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: auto;
+}
+
+#africa{
+    background-color: darkorange;
+}
+#americas{
+    background-color: #73ff78;
+}
+#asia{
+    background-color: red;
+}
+#europa{
+    background-color: darkorchid;
+}
+#oceania{
+    background-color: lightskyblue;
+}
+#todos{
+    background-color: tomato;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Lista de Países</h1>
+    <input type="text" id="pesquisar" placeholder="Pesquisar países">
+    <ul id="pesqresult"></ul>
+
+    <div id="continente">
+        <button id="todos">Todos</button>
+        <button id="africa">África</button>
+        <button id="americas">Américas</button>
+        <button id="asia">Ásia</button>
+        <button id="europa">Europa</button>
+        <button id="oceania">Oceania</button>
+    </div>
+
+    <div class="container">
+        <div class="esquerda">
+            <h2>Países</h2>
+            <p>Quantidade de Países: <span id="quantidadePaises">0</span></p>
+            <p>Total de População: <span id="totalPopulacao">0</span></p>
+            <ul id="listaPaises"></ul>
+        </div>
+        <div class="direita">
+            <h2>Favoritos</h2>
+          
+            <ul id="listaFavoritos"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
