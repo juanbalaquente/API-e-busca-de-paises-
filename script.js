@@ -1,10 +1,17 @@
+var paises = [];
+var favoritos = [];
+var data
+
+
+
+
+
 const listaPaises = document.getElementById('listaPaises');
 const listaFavoritos = document.getElementById('listaFavoritos');
 const quantidadePaises = document.getElementById('quantidadePaises');
 const totalPopulacao = document.getElementById('totalPopulacao');
-var paises = [];
-var favoritos = [];
-var data
+
+
 
 var btnTodos = document.getElementById("todos");
 var btnAfrica = document.getElementById("africa");
@@ -12,6 +19,8 @@ var btnAmericas = document.getElementById("americas");
 var btnAsia = document.getElementById("asia");
 var btnEuropa = document.getElementById("europa");
 var btnOceania = document.getElementById("oceania");
+
+
 
 async function buscarPaises() {
     try {
@@ -32,6 +41,9 @@ async function buscarPaises() {
     }
 }
 
+
+
+
 function exibirPaises() {
     listaPaises.innerHTML = '';
     quantidadePaises.textContent = paises.length;
@@ -44,6 +56,8 @@ function exibirPaises() {
     });
 }
 
+
+
 function exibirPaisesFiltrados(filtro) {
     listaPaises.innerHTML = '';
     quantidadePaises.textContent = filtro.length;
@@ -55,6 +69,8 @@ function exibirPaisesFiltrados(filtro) {
         listaPaises.appendChild(li);
     });
 }
+
+
 
 function adicionarAosFavoritos(paisId) {
     const pais = paises.find(p => p.id === paisId);
@@ -71,6 +87,8 @@ function adicionarAosFavoritos(paisId) {
     }
 }
 
+
+
 function exibirFavoritos() {
     listaFavoritos.innerHTML = '';
     favoritos.forEach(favorito => {
@@ -79,6 +97,8 @@ function exibirFavoritos() {
         listaFavoritos.appendChild(li);
     });
 }
+
+
 
 function removerDosFavoritos(paisId) {
     const pais = favoritos.find(f => f.id === paisId);
@@ -97,9 +117,15 @@ function removerDosFavoritos(paisId) {
 
 buscarPaises();
 
+
+
 var searchInput = document.getElementById("pesquisar");
 
+
+
 var searchResults = document.getElementById("pesqresult");
+
+
 
 searchInput.addEventListener("input", function () {
     var pesqtermo = searchInput.value.toLowerCase();
@@ -111,6 +137,8 @@ searchInput.addEventListener("input", function () {
     displayResults(filtrados);
 });
 
+
+
 function displayResults(results) {
     searchResults.innerHTML = '';
 
@@ -121,6 +149,8 @@ function displayResults(results) {
         searchResults.appendChild(listItem);
     });
 }
+
+
 
 
 async function buscarPaises() {
@@ -142,6 +172,8 @@ async function buscarPaises() {
         console.error('Erro ao buscar países:', error);
     }
 }
+
+
 
 
 btnTodos.addEventListener("click", function () {
@@ -189,12 +221,15 @@ function displayResults(results) {
         searchResults.appendChild(listItem);
     });
 
+
     if (results.length === 0) {
         document.getElementById("continente").style.display = "block";
     } else {
         document.getElementById("continente").style.display = "none";
     }
 }
+
+
 
 searchInput.addEventListener("input", function () {
     var pesqtermo = searchInput.value.toLowerCase();
